@@ -4,15 +4,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>한국대학교</title>
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 	<script src="../bxslider/js/jquery-3.3.1.min.js"></script>
 	<script src="../bxslider/js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.slider1').bxSlider({
 				pager:false,auto:true
+			})
+			$('.slider2').bxSlider({
+				auto:true,controls:false
 			})
 		})
 	</script>
@@ -73,19 +77,82 @@
 			</div>
 		</div>
 		<div class="content_wrap">
-			<div class="row">
+			<div class="row clearfix">
 				<div class="span9">
 					<ul class="slider1">
 						<li class="imgview">
 							<img src="./images/slider01.jpg" alt="">
 							<p>한국에서<br>시작하는<br>새로운 꿈</p>
+							<a href="#">자세히보기</a>
 						</li>
 						<li class="imgview">
 							<img src="./images/slider02.jpg" alt="">
 						</li>
 					</ul>
 				</div>
-				<div class="span3"></div>
+				<div class="span3">
+						<img src="./images/image02.jpg" alt="">
+					<div class="app">						
+						<h4>APP으로<br>스마트 도서관<br>바로 이용하자!</h4>
+						<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
+					</div>						
+						<a href="#">자세히보기</a>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="span4">
+					<h4>HOT LINK</h4>
+					<img src="./images/icons.jpg" alt="">
+					<ul class="clearfix">
+						<li>국제교류센터</li>
+						<li>원격지원시스템</li>
+						<li>예산 / 결산 공고</li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h4>공지사항</h4>
+				</div>
+				<div class="span4">
+					<h4>SNS NEWS</h4>
+					<div class="notice clearfix">
+					 	<img src="./images/학교01.jpg" alt="">
+					 	<p>한국대학교는 2017학년도 신입생 입학식을 3월 2일 (목) 본교 종합체육과...</p>
+					 </div>
+					 <div class="sns">
+					 	<ul class="clearfix">
+					 		<li><a href="#"></a></li>
+					 		<li><a href="#"></a></li>
+					 		<li><a href="#"></a></li>
+					 		<li><a href="#"></a></li>
+					 	</ul>
+					 </div>
+				</div>
+				<div class="span4">
+					<div class="box">캠퍼스 투어</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="bottom clearfix">
+					<div class="bspan3"></div>
+					<div class="bspan9">
+						<ul class="slider2">
+							<li class="imgview">
+								<img src="./images/b_slider.jpg" alt="">
+								<div class="bcontent">
+									<p>2017년 신편입생 2차 모집</p>
+									<a href="#">2017.7.1 ~ 7.10</a>
+									<div class="box">입학사전예약</div>
+								</div>
+							</li>
+							<li class="imgview">
+								<img src="./images/b_slider01.jpg" alt="">
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				
 			</div>
 		</div>
 
