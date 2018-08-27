@@ -12,12 +12,27 @@
 	<script src="../bxslider/js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.slider1').bxSlider({
-				pager:false,auto:true
-			})
+			var mainslider = $('.slider1').bxSlider({
+				pager:false,auto:true,controls:false
+			});
+			$('.prevBtn').click(function(){
+				mainslider.goToPrevSlide();
+			});
+			$('.nextBtn').click(function(){
+				mainslider.goToNextSlide();
+			});
 			$('.slider2').bxSlider({
 				auto:true,controls:false
-			})
+			});
+			var myslider =$('.slider3').bxSlider({
+				mode:'vertical',auto:true,pager:false,controls:false
+			});
+			$('.prevBtn2').click(function(){
+				myslider.goToPrevSlide();
+			});
+			$('.nextBtn2').click(function(){
+				myslider.goToNextSlide();
+			});
 		})
 	</script>
 </head>
@@ -89,6 +104,8 @@
 							<img src="./images/slider02.jpg" alt="">
 						</li>
 					</ul>
+					<div class="prevBtn"><img src="./images/slide_button01.png" alt=""></div>
+					<div class="nextBtn"><img src="./images/slide_button02.png" alt=""></div>
 				</div>
 				<div class="span3">
 						<img src="./images/image02.jpg" alt="">
@@ -111,6 +128,30 @@
 				</div>
 				<div class="span4">
 					<h4>공지사항</h4>
+					<table>
+						<tbody>
+							<tr>
+								<td>·</td>
+								<td>[공지]한국대학교 웹진</td>
+								<td class="left">2018-08-23</td>
+							</tr>
+							<tr>
+								<td>·</td>
+								<td>[공지]한국대학교 웹진</td>
+								<td class="left">2018-08-23</td>
+							</tr>
+							<tr>
+								<td>·</td>
+								<td>[공지]한국대학교 웹진</td>
+								<td class="left">2018-08-23</td>
+							</tr>
+							<tr>
+								<td>·</td>
+								<td>[공지]한국대학교 웹진</td>
+								<td class="left">2018-08-23</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="span4">
 					<h4>SNS NEWS</h4>
@@ -151,8 +192,20 @@
 					</div>					
 				</div>
 			</div>
-			<div class="row">
-				
+			<div class="row4 clearfix">
+				<div class="schedule">학사일정 ＜2017 08＞</div>
+				<ul class="slider3">
+					<li class="sd">
+						<div class="title">2016 - 1학기 성적 열람 및 상담신청</div>
+						<span class="subject">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친후 확인이... </span>
+					</li>
+					<li class="sd">
+						<div class="title">2016 - 1학기 성적 열람 및 상담신청</div>
+						<span class="subject">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친후 확인이... </span>
+					</li>
+				</ul>
+				<div class="prevBtn2"><img src="./images/up.jpg" alt="이전버튼"></div>
+					<div class="nextBtn2"><img src="./images/down.jpg" alt="다음버튼"></div>
 			</div>
 		</div>
 
